@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+:root {
+    --cornav: rgb(255, 238, 0);
+    --fontnav: rgb(255, 255, 255);
+    --headerfont: rgb(255, 255, 255);
+    --letranav: rgb(0, 0, 0);
+    --fundomain: rgb(204, 204, 204);
+    --degrade: rgba(255, 208, 0, 0.616);
+    --video: rgba(49, 49, 49, 0.664);
+}
+
+body {
+    background: radial-gradient(circle, rgba(94, 95, 48, 0.541) 0%, rgb(0, 0, 0) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin: 31px;
+    padding: 26px;
+    text-align: center;
+    border-radius: 2%;
+    color: var(--headerfont);
+}
+
+nav {
+    text-align: center;
+}
+
+nav :hover {
+    background-color: var(--cornav);
+    margin: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    color: var(--letranav);
+    transition-duration: 0.2s;
+}
+
+nav>a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--fontnav)
+    
+
+}
+
+.logo {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+h1#titulo {
+    font-size: 2.5em;
+
+}
+
+h2#subtitulo {
+    font-family: monospace;
+    font-size: 2.1em;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--degrade), transparent);
+
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    
+
+}
+
+main {
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px 25px;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: var(--fundomain);
+}
+
+div.video{
+    background-color: var(--video);
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+}
+
+
+
+
+section#lista>p {
+    border-radius: 25px 25px 7px 7px;
+    padding: 15px;
+    background-color: rgb(119, 119, 119);
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold
+}
+
+section#lista {
+    border-radius: 25px 25px 7px 7px;
+    width: auto;
+    padding: auto;
+    margin: auto;
+    background-color: rgba(146, 146, 146, 0.377);
+}
+
+section#lista ul a {
+    text-decoration: none;
+    color: black;
+
+}
+
+section#lista ul a:hover {
+    text-decoration: underline;
+}
+
+footer > p{
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    color: white;
+    background-color: rgb(22, 22, 22);
+    border-radius: 25px;
+}
